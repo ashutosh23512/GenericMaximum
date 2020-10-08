@@ -63,6 +63,36 @@ public class GenericMaximumTest {
 		} 
 		Assert.assertEquals(true, check);;
 	}
+	@Test
+	public void givenFirst_Greater_ShouldReturnFirst_String() {
+		GenericMaximum obj = new GenericMaximum();
+		String result = obj.maxString("Apple", "Peach", "Banana");
+		boolean check=false; 
+		if(result == "Banana") {
+		check = true;
+		} 
+		Assert.assertEquals(true, check);;
+	}
+	@Test
+	public void givenSecond_Greater_ShouldReturnSecond_String() {
+		GenericMaximum obj = new GenericMaximum();
+		String result = obj.maxString("Peach", "Banana", "Apple");
+		boolean check=false; 
+		if(result == "Banana") {
+		check = true;
+		} 
+		Assert.assertEquals(true, check);;
+	}
+	@Test
+	public void givenThird_Greater_ShouldReturnThird_String() {
+		GenericMaximum obj = new GenericMaximum();
+		String result = obj.maxString("Banana", "Apple", "Peach");
+		boolean check=false; 
+		if(result == "Banana") {
+		check = true;
+		} 
+		Assert.assertEquals(true, check);;
+	}
 
 
 }
