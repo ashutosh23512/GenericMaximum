@@ -6,7 +6,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenFirst_Greater_ShouldReturnFirst() {
 		GenericMaximum obj = new GenericMaximum();
-		Integer result = obj.maxInteger(30, 20, 10);
+		Integer result = obj.max(30, 20, 10);
 		boolean check=false; 
 		if(result == 30) {
 		check = true;
@@ -16,7 +16,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenSecond_Greater_ShouldReturnSecond() {
 		GenericMaximum obj = new GenericMaximum();
-		Integer result = obj.maxInteger(20, 30, 10);
+		Integer result = obj.max(20, 30, 10);
 		boolean check=false; 
 		if(result == 30) {
 		check = true;
@@ -26,7 +26,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenThird_Greater_ShouldReturnThird() {
 		GenericMaximum obj = new GenericMaximum();
-		Integer result = obj.maxInteger(20, 10, 30);
+		Integer result = obj.max(20, 10, 30);
 		boolean check=false; 
 		if(result == 30) {
 		check = true;
@@ -36,7 +36,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenFirst_Greater_ShouldReturnFirst_Float() {
 		GenericMaximum obj = new GenericMaximum();
-		Float result = obj.maxFloat(30f, 20f, 10f);
+		Float result = obj.max(30f, 20f, 10f);
 		boolean check=false; 
 		if(result == 30f) {
 		check = true;
@@ -46,7 +46,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenSecond_Greater_ShouldReturnSecond_Float() {
 		GenericMaximum obj = new GenericMaximum();
-		Float result = obj.maxFloat(20f, 30f, 10f);
+		Float result = obj.max(20f, 30f, 10f);
 		boolean check=false; 
 		if(result == 30f) {
 		check = true;
@@ -56,7 +56,7 @@ public class GenericMaximumTest {
 	@Test
 	public void givenThird_Greater_ShouldReturnThird_Float() {
 		GenericMaximum obj = new GenericMaximum();
-		Float result = obj.maxFloat(20f, 10f, 30f);
+		Float result = obj.max(20f, 10f, 30f);
 		boolean check=false; 
 		if(result == 30f) {
 		check = true;

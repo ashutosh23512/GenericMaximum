@@ -2,30 +2,6 @@ package com.generic;
 
 public class GenericMaximum {
 
-	public int maxInteger(Integer a,Integer b,Integer c)
-	{
-		Integer max = a;
-		if(b.compareTo(max)>0) {
-			max=b;
-		}
-		if(c.compareTo(max)>0) {
-			max=c;
-		}
-		return max;
-		
-	}
-	public float maxFloat(Float a,Float b,Float c)
-	{
-		Float max = a;
-		if(b.compareTo(max)>0) {
-			max=b;
-		}
-		if(c.compareTo(max)>0) {
-			max=c;
-		}
-		return max;
-		
-	}
 	public String maxString(String a,String b,String c)
 	{
 		Integer max = a.length();
@@ -44,8 +20,20 @@ public class GenericMaximum {
 		return maxstring;
 		
 	}
+	public <E extends Comparable> E max(E a,E b,E c)
+	{
+		E max = a;
+		if(b.compareTo(max)>0) {
+			max=b;
+		}
+		if(c.compareTo(max)>0) {
+			max=c;
+		}
+		return max;
+	}
 	public static void main(String[] args) {
-
+		
+			
 
 	}
 
