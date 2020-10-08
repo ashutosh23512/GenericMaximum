@@ -1,26 +1,22 @@
 package com.generic;
 
-public class GenericMaximum {
-
-	public String maxString(String a,String b,String c)
+public class GenericMaximum<E extends Comparable <E>> {
+	
+	E x;
+	E y;
+	E z;
+	
+	
+	public GenericMaximum(E x,E y, E z)
 	{
-		Integer max = a.length();
-		String maxstring=a;
-		Integer blength=b.length();
-		Integer clength=c.length();
-		
-		if(blength.compareTo(max)>0) {
-			max=blength;
-			maxstring=b;
-		}
-		if(clength.compareTo(max)>0) {
-			max=clength;
-			maxstring=c;
-		}
-		return maxstring;
+		this.x=x;
+		this.y=y;
+		this.z=z;
 		
 	}
-	public <E extends Comparable> E max(E a,E b,E c)
+
+
+	public <E extends Comparable<E>> E max(E a,E b,E c)
 	{
 		E max = a;
 		if(b.compareTo(max)>0) {
@@ -30,6 +26,11 @@ public class GenericMaximum {
 			max=c;
 		}
 		return max;
+	}
+	public <E extends Comparable<E>> E maxofthree()
+	{
+		max(x,y,z);
+		return (E) max(x,y,z);
 	}
 	public static void main(String[] args) {
 		
