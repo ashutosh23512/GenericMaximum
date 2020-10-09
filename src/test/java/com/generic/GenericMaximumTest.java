@@ -14,7 +14,7 @@ public class GenericMaximumTest {
 		if((Integer)obj.max(arrlist) == 50) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnSecond() {
@@ -25,7 +25,7 @@ public class GenericMaximumTest {
 		if((Integer)obj.max(arrlist) == 50) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnThird() {
@@ -36,7 +36,7 @@ public class GenericMaximumTest {
 		if((Integer)obj.max(arrlist) == 50) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnFirst_Float() {
@@ -47,7 +47,7 @@ public class GenericMaximumTest {
 		if((Float)obj.max(arrlist) == 50f) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnSecond_Float() {
@@ -58,7 +58,7 @@ public class GenericMaximumTest {
 		if((Float)obj.max(arrlist) == 50f) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnThird_Float() {
@@ -69,7 +69,7 @@ public class GenericMaximumTest {
 		if((Float)obj.max(arrlist) == 50f) {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnFirst_String() {
@@ -80,7 +80,7 @@ public class GenericMaximumTest {
 		if((String)obj.max(arrlist) == "Watermelon") {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnSecond_String() {
@@ -91,7 +91,7 @@ public class GenericMaximumTest {
 		if((String)obj.max(arrlist) == "Watermelon") {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 	@Test
 	public void givenFirst_Greater_ShouldReturnThird_String() {
@@ -102,7 +102,7 @@ public class GenericMaximumTest {
 		if((String)obj.max(arrlist) == "Watermelon") {
 		check = true;
 		} 
-		Assert.assertEquals(true, check);;
+		Assert.assertEquals(true, check);
 	}
 
 
