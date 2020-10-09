@@ -29,8 +29,14 @@ public class GenericMaximum<E extends Comparable <E>> {
 	public <E extends Comparable<E>> E max(ArrayList<E> arrlist)
 	{
     	Collections.sort(arrlist);
+    	printMax(arrlist);
     	return arrlist.get(arrlist.size()-1);
 	}
+	
+   public static <E> void printMax(ArrayList<E> arrlist) {
+    	System.out.println(arrlist.get(arrlist.size()-1));
+    	
+    }
 
 	public static void main(String[] args) {
 		
